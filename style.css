@@ -1,0 +1,473 @@
+/* =====global===== */
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.fs-7 {
+  font-size: 13px;
+}
+/* =====navbar===== */
+li {
+  position: relative;
+}
+.navbar a {
+  color: white;
+}
+.navbar a:hover {
+  color: white;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 10px;
+  left: 15%;
+  right: 0%;
+  width: 0%;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 50%;
+}
+/* =====header===== */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+h1 {
+  font-size: 60px;
+}
+.key::after {
+  content: " |";
+  animation-name: typing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "fr |";
+  }
+  2% {
+    content: "fre |";
+  }
+  4% {
+    content: "free |";
+  }
+  5% {
+    content: "freel |";
+  }
+  7% {
+    content: "freela |";
+  }
+  9% {
+    content: "freelan |";
+  }
+  11% {
+    content: "freelanc |";
+  }
+  13% {
+    content: "freelance |";
+  }
+  15% {
+    content: "freelancer |";
+  }
+  17% {
+    content: "freelance |";
+  }
+  18% {
+    content: "freelanc |";
+  }
+  20% {
+    content: "freelan |";
+  }
+  22% {
+    content: "freela |";
+  }
+  24% {
+    content: "freel |";
+  }
+  26% {
+    content: "free |";
+  }
+  28% {
+    content: "fre |";
+  }
+  30% {
+    content: "fr |";
+  }
+  32% {
+    content: "f |";
+  }
+  34% {
+    content: " |";
+  }
+  35% {
+    content: " D |";
+  }
+  37% {
+    content: " De |";
+  }
+  39% {
+    content: " Des |";
+  }
+  41% {
+    content: " Desi |";
+  }
+  43% {
+    content: " Desig |";
+  }
+  45% {
+    content: " Design |";
+  }
+  47% {
+    content: " Designe |";
+  }
+  49% {
+    content: " Designer |";
+  }
+  51% {
+    content: " Designe|";
+  }
+  53% {
+    content: " Design |";
+  }
+  55% {
+    content: " Desig |";
+  }
+  57% {
+    content: " Desi |";
+  }
+  59% {
+    content: " Des |";
+  }
+  60% {
+    content: " De |";
+  }
+  62% {
+    content: " D |";
+  }
+  64% {
+    content: " |";
+  }
+  66% {
+    content: " D |";
+  }
+  67% {
+    content: " De |";
+  }
+  69% {
+    content: " Dev |";
+  }
+  71% {
+    content: " Deve |";
+  }
+  73% {
+    content: " Devel |";
+  }
+  75% {
+    content: " Develo |";
+  }
+  76% {
+    content: " Develop |";
+  }
+  78% {
+    content: " Develope |";
+  }
+  80% {
+    content: " Developer |";
+  }
+  82% {
+    content: " Develope |";
+  }
+  84% {
+    content: " Develop |";
+  }
+  86% {
+    content: " Develo |";
+  }
+  88% {
+    content: " Devel |";
+  }
+  90% {
+    content: " Deve |";
+  }
+  92% {
+    content: " Dev |";
+  }
+  94% {
+    content: " De |";
+  }
+  96% {
+    content: " D |";
+  }
+  100% {
+    content: " |";
+  }
+}
+/* =====about===== */
+.about ul {
+  list-style: none;
+}
+.about h2::before {
+  content: "";
+  width: 17%;
+  height: 3px;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: -30%;
+}
+.about-content {
+  width: 50%;
+}
+/* ====service==== */
+
+.icon {
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px #0078ff;
+  display: block;
+  transition: 0.5s;
+}
+
+.icon i {
+  margin-top: 33px;
+}
+
+.icon:hover {
+  background-color: #0078ff;
+  color: white;
+  box-shadow: 0 0 0 10px #98a5b471;
+}
+
+/* ====counter==== */
+.counter {
+  background-image: url(./post-3.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.layer {
+  background-color: rgba(0, 0, 100, 0.5);
+
+  height: 50vh;
+}
+.counter-icon {
+  height: 60px;
+  width: 60px;
+  line-height: 1.5;
+  box-shadow: 0 0 0 10px #cde1f8;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.counter-icon i {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+.counter-icon2 {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 10px solid;
+  border-color: white;
+  left: 25%;
+}
+.counter-icon2 i {
+  position: absolute;
+  left: 25%;
+  top: 30%;
+}
+
+/* ====portfolio==== */
+.portfolio h2::before {
+  content: "";
+  width: 3%;
+  height: 5px;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: -120%;
+  left: 49%;
+}
+.portfolio-hover:hover i {
+  color: rgba(0, 0, 100, 0.7);
+}
+.card:hover img {
+  transform: scale(1.2);
+}
+.card img {
+  transition: 1s;
+}
+/* ====Carousel==== */
+.Carousel {
+  background-image: url(./overlay-bg.jpg);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.layer2 {
+  background-color: rgba(0, 0, 100, 0.5);
+  height: 80vh;
+}
+
+.carousel-indicators button {
+  border-radius: 50%;
+  margin: 20px;
+  width: 12px !important;
+  height: 12px !important;
+  border: 2px transparent !important;
+  border-radius: 50%;
+}
+
+.carousel-indicators button.active {
+  width: 12px;
+  height: 12px;
+  border: 2px transparent;
+  border-radius: 50%;
+  color: white;
+}
+.item h6 {
+  font-size: 23px;
+  font-weight: 600px;
+}
+.item p {
+  font-size: 20px;
+  font-weight: 100px;
+  color: white;
+}
+/* ====blog==== */
+.blog h2::before {
+  content: "";
+  width: 3%;
+  height: 5px;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: -120%;
+  left: 49%;
+}
+.blog .card-body a {
+  color: #1e1e1e;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.card-body {
+  border: 1px gainsboro solid;
+}
+.blog .card-body h6 {
+  margin-left: 70px;
+}
+.blog .card-body p {
+  font-size: 16px;
+}
+.card-body h4 a {
+  transition: 0.3s;
+}
+.card-body h4 :hover {
+  color: #0078ff;
+}
+.card-footer {
+  background-color: #21252908;
+}
+.card-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  overflow: hidden;
+}
+.left-card-footer i {
+  margin-top: 6px;
+}
+.right-card-footer p {
+  transition: 0.3s;
+}
+
+.right-card-footer p:hover {
+  color: #0078ff;
+}
+
+.card2 {
+  margin-left: 100px !important;
+}
+
+/* ====contact==== */
+.contact {
+  background-image: url(./overlay-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 90vh;
+}
+.layer3 {
+  background-color: rgba(0, 0, 100, 0.5);
+  height: 90vh;
+}
+.contact h3::before {
+  content: "";
+  width: 15%;
+  height: 3px;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: -30%;
+}
+.contact .form-group button {
+  border: 5px solid white;
+
+  transition: 0.3s;
+}
+.contact .form-group button:hover {
+  border: 4px solid rgba(256, 256, 256, 0.7);
+  background-color: #4190ea;
+}
+.left-contact p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.contact-icon p {
+  font-size: 16px;
+}
+.contact-icon2 {
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  line-height: 1.6;
+  margin: 0 15px 0 0;
+  box-shadow: 0 0 0 3px #0078ff;
+  transition: 0.2s;
+}
+.contact-icon2:hover {
+  background-color: #0078ff;
+  color: #fff;
+  box-shadow: 0 0 0 3px #cde1f8;
+}
+/* ====footer==== */
+footer {
+  background-color: rgb(0, 0, 100);
+  height: 10vh;
+}

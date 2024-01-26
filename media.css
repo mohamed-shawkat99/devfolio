@@ -1,0 +1,120 @@
+/* @media screen and (max-width:1400px){
+    .team .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .team .container .row .col-md-3{
+        margin-bottom: 50px;
+        width: 50%;
+    }
+
+} */
+@media screen and (max-width: 992px) {
+  header > h1 {
+    font-size: 50px;
+  }
+}
+/* @media screen and (max-width:768px){
+    .team .container .row .col-md-3{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:576px){
+    .team .container .row .col-md-3{
+        width: 100%;
+    }
+
+} */
+
+/* ====about==== */
+@media screen and (max-width: 1040px) {
+  .about .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content {
+    width: 100%;
+  }
+}
+
+/* ====SERVICES==== */
+
+@media screen and (max-width: 1200px) {
+  .service .container .row .col-md-4 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service .container .row .col-md-4 {
+    width: 100%;
+  }
+}
+/* ====counter=== */
+@media screen and (max-width: 1200px) {
+  .counter {
+    height: 80vh;
+  }
+  .layer {
+    height: 80vh;
+  }
+  .counter .row .col-md-3 {
+    width: 33.33%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .counter .row .col-md-3 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .counter .row .col-md-3 {
+    width: 100%;
+  }
+  .counter {
+    height: 120vh;
+  }
+  .layer {
+    height: 120vh;
+  }
+}
+/* ====portfolio==== */
+@media screen and (max-width: 1200px) {
+  .portfolio .row .col {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolio .row .col {
+    width: 100%;
+  }
+  .card-body .row .col-md-4 {
+    margin-left: 150px;
+  }
+}
+/* ====blog==== */
+@media screen and (max-width: 992px) {
+  .blog .row .col-md-4 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog .row .col-md-4 {
+    width: 100%;
+  }
+}
+/* ====contact==== */
+@media screen and (max-width: 992px) {
+  .contact .row .col-md-6 {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .contact {
+    height: 150vh;
+  }
+  .layer3 {
+    height: 150vh;
+  }
+}
